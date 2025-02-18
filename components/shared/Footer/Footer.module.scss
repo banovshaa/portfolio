@@ -1,0 +1,102 @@
+.footer {
+  border-radius: 24px 24px 0px 0px;
+  background: #272727;
+  padding: 25px 71px;
+  * {
+    color: #fcfcfd;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    width: 100%;
+    & h2 {
+      font-size: 64px;
+      line-height: 80px;
+      font-weight: 600;
+      letter-spacing: -0.96px;
+    }
+  }
+  &__content {
+    border-bottom: 2px solid #475467;
+    border-top: 2px solid #475467;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    padding-top: 48px;
+    & .left {
+      width: 44%;
+      & p {
+        font-size: 18px;
+        letter-spacing: -0.3px;
+        line-height: 26px;
+        margin: 32px 0;
+      }
+      & .socials {
+        align-items: center;
+        display: flex;
+        gap: 5px;
+      }
+    }
+    & .right {
+      display: flex;
+      gap: 28px;
+      & .content__box {
+        & .box__title {
+          color: #7790ed;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: -0.3px;
+          margin-bottom: 28px;
+        }
+        & nav {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          & a {
+            & span {
+              font-size: 16px;
+              letter-spacing: -0.24px;
+            }
+          }
+        }
+        & .contact__form {
+          & .input__box {
+            display: flex;
+            & input {
+              background: #fff;
+              border-radius: 14px 0px 0px 14px;
+              color: #000;
+              font-size: 16px;
+              font-weight: 400;
+              height: 51px;
+              letter-spacing: -0.24px;
+              padding: 14px;
+              width: 100%;
+            }
+            & button {
+              align-items: center;
+              background: #7790ed;
+              border-radius: 0px 14px 14px 0px;
+              display: flex;
+              height: 51px;
+              justify-content: center;
+              padding: 10px 8px;
+              width: 46px;
+            }
+          }
+        }
+      }
+    }
+  }
+  & .copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+    & p {
+      color: #fff;
+      font-size: 16px;
+      letter-spacing: -0.3px;
+    }
+  }
+}

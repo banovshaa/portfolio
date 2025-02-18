@@ -1,0 +1,27 @@
+.header {
+  padding-top: 40px;
+  &__inner {
+    align-items: center;
+    backdrop-filter: blur(7.5px);
+    background: #171717;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    & a {
+      border-radius: 60px;
+      padding: 20px 40px;
+      transition: 0.3s;
+      & span {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: -0.3px;
+      }
+      &:hover {
+        background: #7790ed;
+      }
+    }
+  }
+}

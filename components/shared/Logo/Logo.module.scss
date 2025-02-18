@@ -1,0 +1,16 @@
+.logo {
+  border-radius: 50px;
+  background: #7790ed;
+  display: flex;
+  width: 52px;
+  height: 52px;
+  padding: 0px 5px;
+  justify-content: center;
+  align-items: center;
+  & span {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -0.3px;
+  }
+}
