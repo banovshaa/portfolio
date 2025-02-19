@@ -1,11 +1,8 @@
-import styles from "./Logo.module.scss";
+import Image from "next/image";
+import LogoImage from "@/assets/images/Logo.svg";
 
 const Logo = () => {
-  return (
-    <div className={styles.logo}>
-      <span>BA</span>
-    </div>
-  );
+  return <Image src={LogoImage} alt="Logo" />;
 };
 
 export default Logo;

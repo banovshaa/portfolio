@@ -24,7 +24,11 @@ const Footer = () => {
             {socials.map((item, index) => {
               const Icon = item.icon;
               return (
-                <Link href={item.path} key={`${item.name}__${index}`}>
+                <Link
+                  href={item.path}
+                  key={`${item.name}__${index}`}
+                  target={"_blank"}
+                >
                   {Icon && <Icon />}
                 </Link>
               );
