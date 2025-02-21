@@ -58,7 +58,29 @@
   & .banner {
     border-radius: 24px 0px;
     background: #4d61de;
-    height: 147px;
+    min-height: 135px;
     width: 100%;
+    overflow: hidden;
+
+    &__inner {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+      transform: rotate(-3deg) translateX(-1px);
+      // padding: 0 20px;
+      & p {
+        font-size: 38px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.72px;
+      }
+    }
+    & .skill {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
   }
 }

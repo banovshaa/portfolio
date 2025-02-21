@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "./Hero/Hero";
-import Services from "./Services/Services";
+import Skills from "./Skills/Skills";
 import Experience from "./Experience/Experience";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Services />
+      <Skills />
       <Experience />
       <About />
       <Projects />

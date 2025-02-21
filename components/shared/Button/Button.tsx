@@ -6,7 +6,7 @@ interface Button extends ButtonHTMLAttributes<HTMLButtonElement> {
   height?: number;
   bgColor?: string;
   textColor?: string;
-  icon?: ComponentType<{ color?: string }>;
+  icon?: ComponentType<{ color?: string; size?: number }>;
 }
 
 const Button = ({

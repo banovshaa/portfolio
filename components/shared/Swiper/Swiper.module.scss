@@ -1,0 +1,35 @@
+.swiper {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  .dot {
+    background: #e4e7ec;
+    border-radius: 20.736px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    &.active {
+      background: #7790ed;
+      width: 60px;
+    }
+  }
+}
+.content__wrapper {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.content {
+  &.active {
+    display: block;
+  }
+  &.inactive {
+    display: none;
+  }
+}

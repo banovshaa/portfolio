@@ -1,7 +1,7 @@
 .footer {
   border-radius: 24px 24px 0px 0px;
   background: #272727;
-  padding: 25px 71px;
+  padding: 36px 71px 25px;
   * {
     color: #fcfcfd;
   }
@@ -11,10 +11,9 @@
     padding-bottom: 48px;
     width: 100%;
     & h2 {
-      font-size: 64px;
-      line-height: 80px;
+      font-size: 56px;
+      line-height: 64px;
       font-weight: 600;
-      letter-spacing: -0.96px;
     }
   }
   &__content {
