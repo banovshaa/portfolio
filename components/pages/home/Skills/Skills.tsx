@@ -8,7 +8,7 @@ const Skills = () => {
     <section className={`${styles.skills} container`}>
       <div className={styles.title__wrapper}>
         <h4 className={styles.title}>
-          My <span>Services</span>
+          My <span>Skills</span>
         </h4>
         <p className={styles.subtitle}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus

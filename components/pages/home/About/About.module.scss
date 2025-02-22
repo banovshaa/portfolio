@@ -40,6 +40,11 @@
       font-size: 20px;
       font-weight: 600;
       letter-spacing: -0.48px;
+      transition: 0.3s;
+      &:hover {
+        background: #151515;
+        color: #fff;
+      }
     }
   }
 }
