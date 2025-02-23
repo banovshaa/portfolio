@@ -3,15 +3,31 @@
   border-radius: 50px;
   padding: 122px 71px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 80px;
+  position: relative;
+  & .hover__img {
+    position: absolute;
+    left: 6.5%;
+    top: 6%;
+    width: 400px;
+    object-fit: contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    pointer-events: none;
+  }
   &__left {
     background-color: #7790ed;
-    height: 600px;
-    width: 40%;
-    border-radius: 32px;
+    height: 350px;
+    width: 300px;
+    border-radius: 80px;
+    transition: 0.3s;
   }
   &__right {
-    width: 55%;
+    width: 800px;
     margin-top: 46px;
     & h2 {
       color: #344054;
@@ -45,6 +61,17 @@
         background: #151515;
         color: #fff;
       }
+    }
+  }
+  &.hovered {
+    & .about__left {
+      transform: translateY(20px);
+    }
+
+    & .hover__img {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1.1);
     }
   }
 }

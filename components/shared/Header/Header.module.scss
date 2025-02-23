@@ -27,50 +27,7 @@
       }
     }
     & .logo__wrapper {
-      align-items: center;
-      display: flex;
-      gap: 4px;
-      transition: 0.3s;
       margin-left: 54px;
-      & .visible {
-        width: 150px;
-        & h4 {
-          color: #fff;
-          font-weight: 800;
-          font-size: 24px;
-        }
-      }
-      & .hidden {
-        height: 0;
-        opacity: 0;
-        width: 0;
-        & p {
-          color: #868a8f;
-          font-size: 12px;
-          line-height: normal;
-          margin-bottom: 2px;
-        }
-        & h4 {
-          color: #fff;
-          font-size: 14px;
-          font-weight: 700;
-        }
-      }
-      &:hover {
-        & .hidden {
-          height: auto;
-          opacity: 1;
-          width: 150px;
-        }
-        & .visible {
-          height: 0;
-          opacity: 0;
-          width: 0;
-        }
-        & .logo {
-          transform: translateX(-8px);
-        }
-      }
     }
   }
 }

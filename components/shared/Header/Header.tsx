@@ -17,16 +17,7 @@ const Header = () => {
           </Link>
         ))}
         <div className={styles.logo__wrapper}>
-          <div className={styles.logo}>
-            <Logo />
-          </div>
-          <div className={styles.visible}>
-            <h4>Code</h4>
-          </div>
-          <div className={styles.hidden}>
-            <p>Made by</p>
-            <h4>Banovsha Abdiyeva</h4>
-          </div>
+          <Logo />
         </div>
         {headerNav.slice(3).map((element, index) => (
           <Link href={element.path} key={`navR_${index}`}>
