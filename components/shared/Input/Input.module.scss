@@ -1,0 +1,37 @@
+.input__box {
+  width: 100%;
+  position: relative;
+  & .icon {
+    align-items: center;
+    background: #e1eefe;
+    border-radius: 50px;
+    display: inline-flex;
+    height: 42px;
+    justify-content: center;
+    left: 14px;
+    padding: 8px;
+    position: absolute;
+    position: absolute;
+    top: 7px;
+    width: 42px;
+    z-index: 1;
+  }
+  & input {
+    background: #fff;
+    border-radius: 24px;
+    border: 1px solid #e4e7ec;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    height: 56px;
+    letter-spacing: -0.3px;
+    padding: 14px;
+    width: 100%;
+    &::placeholder {
+      color: #000;
+    }
+    &.with__icon {
+      padding-left: 80px;
+    }
+  }
+}

@@ -3,15 +3,11 @@ import "@/assets/css/global.scss";
 import Header from "@/components/shared/Header/Header";
 import { Poppins } from "next/font/google";
 import Footer from "@/components/shared/Footer/Footer";
+import { ToastProvider } from "@/components/providers/ToastProvider";
 
 export const metadata: Metadata = {
   title: "Portfolio App",
 };
-// export const manrope: NextFont = Manrope({
-//   subsets: ["latin"],
-//   variable: "--font-manrope",
-//   display: "swap",
-// });
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,11 +16,6 @@ const poppins = Poppins({
   display: "swap",
 });
 
-// export const urbanist = Urbanist({
-//   subsets: ["latin"],
-//   variable: "--font-urbanist",
-//   display: "swap",
-// });
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,9 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.className}>
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <ToastProvider>
+          <>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </>
+        </ToastProvider>
       </body>
     </html>
   );

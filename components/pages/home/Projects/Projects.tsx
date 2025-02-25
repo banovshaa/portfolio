@@ -12,7 +12,12 @@ const Projects = () => {
         <h2>
           Lets have a look at my <span>Portfolio</span>
         </h2>
-        <Button name="See all" height={56} />
+        <Button
+          name="See all"
+          style={{
+            height: 56,
+          }}
+        />
       </div>
       <Swiper swiperContent={projects} slidesToShow={2}>
         {projects.map((project) => (
