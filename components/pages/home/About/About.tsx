@@ -20,8 +20,12 @@ const About = () => {
           Why <span>Hire me</span>?
         </h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus
-          nunc, posuere in justo vulputate, bibendum sodales{" "}
+          I’m a front-end developer with a passion for creating visually
+          appealing, user-friendly websites. With expertise in modern front-end
+          technologies, I deliver high-quality, responsive designs that enhance
+          user experience. My problem-solving skills, attention to detail, and
+          collaborative nature make me a reliable partner for any project. Let’s
+          create something great together!
         </p>
         <button>Hire me</button>
       </div>

@@ -9,43 +9,48 @@ import GitImage from "@/assets/images/skills/GIT.png";
 import FigmaImage from "@/assets/images/skills/FIGMA.png";
 import ApiImage from "@/assets/images/skills/API.png";
 
+import KowineIMG from "@/assets/images/projects/kowine.jpeg";
+import SocialaIMG from "@/assets/images/projects/sociala.jpeg";
+import WeatherIMG from "@/assets/images/projects/weather.jpeg";
+import LtcIMG from "@/assets/images/projects/ltc.jpeg";
+
 export const demoProjects = [
   {
     id: 1,
-    name: "Lirante 1",
-    path: "/",
-    image: "/",
+    name: "Kowine",
+    path: "https://kowine.vercel.app/",
+    image: KowineIMG,
   },
   {
     id: 2,
-    name: "Lirante 2",
+    name: "Sociala",
     path: "/",
-    image: "/",
+    image: SocialaIMG,
   },
   {
     id: 3,
-    name: "Lirante 3",
-    path: "/",
-    image: "/",
+    name: "Weather App",
+    path: "https://weather-app-lemon-eight-31.vercel.app/",
+    image: WeatherIMG,
   },
   {
     id: 4,
-    name: "Lirante 4",
-    path: "/",
-    image: "/",
+    name: "LTC Lab",
+    path: "https://ltclab.edu.az/",
+    image: LtcIMG,
   },
-  {
-    id: 5,
-    name: "Lirante 5",
-    path: "/",
-    image: "/",
-  },
-  {
-    id: 6,
-    name: "Lirante 6",
-    path: "/",
-    image: "/",
-  },
+  // {
+  //   id: 5,
+  //   name: "Lirante 5",
+  //   path: "/",
+  //   image: "/",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Lirante 6",
+  //   path: "/",
+  //   image: "/",
+  // },
 ];
 export const demoSkills = [
   {
