@@ -4,6 +4,7 @@ import Header from "@/components/shared/Header/Header";
 import { Poppins } from "next/font/google";
 import Footer from "@/components/shared/Footer/Footer";
 import { ToastProvider } from "@/components/providers/ToastProvider";
+import { LoaderProvider } from "@/components/providers/LoaderProvider";
 
 export const metadata: Metadata = {
   title: "Portfolio App",
@@ -24,13 +25,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.className}>
       <body>
-        <ToastProvider>
-          <>
-            <Header />
-            <main>{children}</main>
-            <Footer />
-          </>
-        </ToastProvider>
+        <LoaderProvider>
+          <ToastProvider>
+            <>
+              <Header />
+              <main>{children}</main>
+              <Footer />
+            </>
+          </ToastProvider>
+        </LoaderProvider>
       </body>
     </html>
   );

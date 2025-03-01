@@ -9,7 +9,7 @@ import GitImage from "@/assets/images/skills/GIT.png";
 import FigmaImage from "@/assets/images/skills/FIGMA.png";
 import ApiImage from "@/assets/images/skills/API.png";
 
-export const projects = [
+export const demoProjects = [
   {
     id: 1,
     name: "Lirante 1",
@@ -47,8 +47,7 @@ export const projects = [
     image: "/",
   },
 ];
-
-export const skills = [
+export const demoSkills = [
   {
     id: 1,
     name: "HTML",
