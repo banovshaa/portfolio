@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./About.module.scss";
 import HoverBG from "@/assets/images/about_hover_bg.png";
 import { useState } from "react";
+import UserAvatar from "@/assets/images/me1.png";
 
 const About = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
@@ -14,7 +15,13 @@ const About = () => {
         className={styles.about__left}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-      ></div>
+      >
+        <Image
+          src={UserAvatar}
+          alt="User avatar"
+          className={styles.user__avatar}
+        />
+      </div>
       <div className={styles.about__right}>
         <h2>
           Why <span>Hire me</span>?

@@ -13,6 +13,7 @@ import KowineIMG from "@/assets/images/projects/kowine.jpeg";
 import SocialaIMG from "@/assets/images/projects/sociala.jpeg";
 import WeatherIMG from "@/assets/images/projects/weather.jpeg";
 import LtcIMG from "@/assets/images/projects/ltc.jpeg";
+import GamestraIMG from "@/assets/images/projects/gamestra.jpeg";
 
 export const demoProjects = [
   {
@@ -39,12 +40,12 @@ export const demoProjects = [
     path: "https://ltclab.edu.az/",
     image: LtcIMG,
   },
-  // {
-  //   id: 5,
-  //   name: "Lirante 5",
-  //   path: "/",
-  //   image: "/",
-  // },
+  {
+    id: 5,
+    name: "Gamestra Landing Page",
+    path: "https://gamestra.vercel.app/",
+    image: GamestraIMG,
+  },
   // {
   //   id: 6,
   //   name: "Lirante 6",

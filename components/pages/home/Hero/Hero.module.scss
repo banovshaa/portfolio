@@ -71,10 +71,20 @@
     }
   }
   & .circle {
-    width: 800px;
-    height: 400px;
     background: #7790ed;
     border-radius: 400px 400px 0 0;
+    height: 400px;
+    position: relative;
+    width: 800px;
+    & .user__avatar {
+      bottom: -10%;
+      left: 50%;
+      object-fit: contain;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 320px;
+      z-index: 1;
+    }
   }
   & .img__hover {
     position: absolute;

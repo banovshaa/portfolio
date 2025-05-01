@@ -6,6 +6,7 @@ import Tabs from "./Tabs/Tabs";
 import HoverBG from "@/assets/images/hero_bg_hover.png";
 import Image from "next/image";
 import { useState } from "react";
+import UserAvatar from "@/assets/images/me2.png";
 
 const Hero = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
@@ -43,7 +44,13 @@ const Hero = () => {
           className={styles.circle}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-        ></div>
+        >
+          <Image
+            src={UserAvatar}
+            alt="User avatar"
+            className={styles.user__avatar}
+          />
+        </div>
       </div>
       <Tabs />
       <div className={styles.img__hover}>
