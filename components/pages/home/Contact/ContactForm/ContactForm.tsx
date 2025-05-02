@@ -34,7 +34,7 @@ const ContactForm = () => {
     }
   }
   return (
-    <form onSubmit={handleSubmit} className={styles.contact__form}>
+    <form onSubmit={handleSubmit} className={styles.contact_form}>
       <div className={styles.inputs}>
         <Input
           icon={UserIcon}
@@ -53,7 +53,7 @@ const ContactForm = () => {
       </div>
 
       <Textarea name="message" placeholder="Enter Your message" />
-      <div className={styles.send__btn}>
+      <div className={styles.send_btn}>
         <Button name="Send" style={{ width: "100%", height: 56 }} />
       </div>
     </form>

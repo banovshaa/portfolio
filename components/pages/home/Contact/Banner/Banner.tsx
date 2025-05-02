@@ -16,7 +16,7 @@ const Banner = () => {
 
   return (
     <div className={styles.banner}>
-      <div className={styles.banner__inner}>
+      <div className={styles.banner_inner}>
         {[...skills, ...skills].map((skill, index) => (
           <div key={`skill__${index}`} className={styles.skill}>
             <p>{skill}</p>

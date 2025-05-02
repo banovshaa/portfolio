@@ -10,13 +10,13 @@
   transition: 0.3s;
   &:hover {
     background-color: #7790ed;
-    & .btn__wrapper {
+    & .btn_wrapper {
       & button {
         // background-color: #7790ed;
       }
     }
   }
-  &__header {
+  &_header {
     border-bottom: 2px solid rgba(249, 250, 251, 0.3);
     padding: 44px 0 23px;
     & h4 {
@@ -28,7 +28,7 @@
       padding: 0 32px;
     }
   }
-  & .img__container {
+  & .img_container {
     bottom: 50px;
     height: 200px;
     left: 50px;
@@ -40,7 +40,7 @@
       width: 100%;
     }
   }
-  & .btn__wrapper {
+  & .btn_wrapper {
     margin-left: auto;
     margin-top: auto;
     padding: 24px;

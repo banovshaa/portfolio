@@ -1,6 +1,6 @@
 .header {
   padding-top: 40px;
-  &__inner {
+  &_inner {
     align-items: center;
     backdrop-filter: blur(7.5px);
     background-color: #171717;
@@ -26,7 +26,7 @@
         background-color: rgba(104, 104, 104, 0.2);
       }
     }
-    & .logo__wrapper {
+    & .logo_wrapper {
       margin-left: 54px;
     }
   }

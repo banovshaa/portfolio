@@ -6,7 +6,7 @@ import Logo from "../Logo/Logo";
 const Header = () => {
   return (
     <header className={`${styles.header} container`}>
-      <nav className={styles.header__inner}>
+      <nav className={styles.header_inner}>
         {headerNav.slice(0, 3).map((element, index) => (
           <Link
             href={element.path}
@@ -16,7 +16,7 @@ const Header = () => {
             <span>{element.name}</span>
           </Link>
         ))}
-        <div className={styles.logo__wrapper}>
+        <div className={styles.logo_wrapper}>
           <Logo />
         </div>
         {headerNav.slice(3).map((element, index) => (

@@ -27,7 +27,7 @@ const Skills = () => {
   }, []);
   return (
     <section className={`${styles.skills} container`}>
-      <div className={styles.title__wrapper}>
+      <div className={styles.title_wrapper}>
         <h4 className={styles.title}>
           My <span>Skills</span>
         </h4>

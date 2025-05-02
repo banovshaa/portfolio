@@ -1,13 +1,14 @@
 import { experiences } from "@/constants/navigation.constant";
 import styles from "./Experience.module.scss";
+import Timeline from "./Timeline/Timeline";
 
 const Experience = () => {
   return (
     <section className={`${styles.experience} container`}>
       <h2>
-        My Work <span>Experience</span>
+        My <span>Work Experience</span>
       </h2>
-      <div className={styles.experience__list}>
+      {/* <div className={styles.experience__list}>
         {experiences.map((experience, index) => (
           <div
             key={`${experience.name}__${index}`}
@@ -36,7 +37,8 @@ const Experience = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
+      <Timeline timeline={experiences} />
     </section>
   );
 };

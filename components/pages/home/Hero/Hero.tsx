@@ -15,7 +15,7 @@ const Hero = () => {
     <section
       className={`${styles.hero} ${isHovered && styles.hovered} container`}
     >
-      <div className={styles.hero__top}>
+      <div className={styles.hero_top}>
         <div className={styles.element_wrapper}>
           <div className={styles.badge}>
             <span>Hello!</span>
@@ -32,7 +32,7 @@ const Hero = () => {
           </span>
         </h1>
       </div>
-      <div className={styles.comment__wrapper}>
+      <div className={styles.comment_wrapper}>
         <QuotIcon />
         <p className={styles.comment}>
           With a keen eye for detail and a drive to constantly learn, I craft
@@ -48,13 +48,13 @@ const Hero = () => {
           <Image
             src={UserAvatar}
             alt="User avatar"
-            className={styles.user__avatar}
+            className={styles.user_avatar}
           />
         </div>
       </div>
       <Tabs />
-      <div className={styles.img__hover}>
-        <Image src={HoverBG} alt="Hover Image" className={styles.img__hover} />
+      <div className={styles.img_hover}>
+        <Image src={HoverBG} alt="Hover Image" />
       </div>
     </section>
   );

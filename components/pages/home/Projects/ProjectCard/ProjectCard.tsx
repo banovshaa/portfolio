@@ -15,12 +15,12 @@ const ProjectCard = ({ options }: { options: CardOptions }) => {
 
   return (
     <div className={`${styles.card}  ${isHovered && styles.hovered}`}>
-      <Link href={options.url} className={styles.redirect__btn} target="_blank">
+      <Link href={options.url} className={styles.redirect_btn} target="_blank">
         <ArrowRightIcon color={isHovered ? "#fff" : "#7790ED"} />
       </Link>
       {options.image && <Image src={options.image} alt="Project image" />}
       <div
-        className={styles.title__wrapper}
+        className={styles.title_wrapper}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >

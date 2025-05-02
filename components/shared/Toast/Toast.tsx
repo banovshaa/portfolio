@@ -30,7 +30,7 @@ export default function Toast({ message, close }: ToastProps) {
   return (
     <div className={styles.toast}>
       <span className={styles.message}>{message}</span>
-      <button type={"button"} onClick={close} className={styles.close__btn}>
+      <button type={"button"} onClick={close} className={styles.close_btn}>
         <CloseIcon />
       </button>
       <div className={styles.progress}></div>

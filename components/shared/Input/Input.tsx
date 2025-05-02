@@ -16,7 +16,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 
 const Input = ({ icon: Icon, style, inputRef, ...props }: InputProps) => {
   return (
-    <div className={styles.input__box}>
+    <div className={styles.input_box}>
       {Icon ? (
         <span className={styles.icon}>
           <Icon />
@@ -26,7 +26,7 @@ const Input = ({ icon: Icon, style, inputRef, ...props }: InputProps) => {
         style={{
           height: style?.height,
         }}
-        className={Icon ? styles.with__icon : ""}
+        className={Icon ? styles.with_icon : ""}
         ref={inputRef}
         {...props}
       />

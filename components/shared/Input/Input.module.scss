@@ -1,4 +1,4 @@
-.input__box {
+.input_box {
   width: 100%;
   position: relative;
   & .icon {
@@ -30,7 +30,7 @@
     &::placeholder {
       color: #000;
     }
-    &.with__icon {
+    &.with_icon {
       padding-left: 80px;
     }
   }

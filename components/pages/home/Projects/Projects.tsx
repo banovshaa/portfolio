@@ -2,7 +2,6 @@
 
 import Button from "@/components/shared/Button/Button";
 import styles from "./Projects.module.scss";
-import ProjectInfo from "./ProjectInfo/ProjectInfo";
 import Swiper from "../../../shared/Swiper/Swiper";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import { useEffect, useState } from "react";
@@ -30,7 +29,7 @@ const Projects = () => {
 
   return (
     <section className={`${styles.projects} container`}>
-      <div className={styles.projects__top}>
+      <div className={styles.projects_top}>
         <h2>
           Lets have a look at my <span>Portfolio</span>
         </h2>
@@ -53,8 +52,6 @@ const Projects = () => {
           />
         ))}
       </Swiper>
-
-      <ProjectInfo />
     </section>
   );
 };

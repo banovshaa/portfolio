@@ -8,11 +8,11 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.footer__top}>
+      <div className={styles.footer_top}>
         <h2>Lets Connect there</h2>
         <Button name="Hire me" icon={ArrowIcon} />
       </div>
-      <div className={styles.footer__content}>
+      <div className={styles.footer_content}>
         <div className={styles.left}>
           <Logo />
           <p>
@@ -36,8 +36,8 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.right}>
-          <div className={styles.content__box}>
-            <p className={styles.box__title}>Navigation</p>
+          <div className={styles.content_box}>
+            <p className={styles.box_title}>Navigation</p>
             <nav>
               {headerNav.map((element, index) => (
                 <Link href={element.path} key={`nav_${index}`}>
@@ -46,10 +46,10 @@ const Footer = () => {
               ))}
             </nav>
           </div>
-          <div className={styles.content__box}>
-            <p className={styles.box__title}>Contact</p>
+          <div className={styles.content_box}>
+            <p className={styles.box_title}>Contact</p>
             <nav>
-              <Link href={"tel:+994775143517"}>+994 775143517</Link>
+              {/* <Link href={"tel:+994775143517"}>+994 775143517</Link> */}
               <Link href={"mailto:abdiyeva.banovsha@gmail.com"}>
                 abdiyeva.banovsha@gmail.com
               </Link>
@@ -58,10 +58,10 @@ const Footer = () => {
               </Link>
             </nav>
           </div>
-          <div className={styles.content__box}>
-            <p className={styles.box__title}>Get the latest information</p>
-            <form className={styles.contact__form}>
-              <div className={styles.input__box}>
+          <div className={styles.content_box}>
+            <p className={styles.box_title}>Get the latest information</p>
+            <form className={styles.contact_form}>
+              <div className={styles.input_box}>
                 <input type="email" placeholder="Email Address" />
                 <button>
                   <SendIcon />

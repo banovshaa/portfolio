@@ -4,7 +4,7 @@ import LogoImage from "@/assets/images/Logo.svg";
 
 const Logo = () => {
   return (
-    <div className={styles.logo__wrapper}>
+    <div className={styles.logo_wrapper}>
       <div className={styles.logo}>
         <Image src={LogoImage} alt="Logo" />
       </div>

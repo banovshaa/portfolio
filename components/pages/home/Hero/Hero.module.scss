@@ -2,12 +2,12 @@
   padding-top: 60px;
   position: relative;
   overflow: hidden;
-  &__top {
+  &_top {
     position: relative;
     transition: 0.3s;
     z-index: 2;
   }
-  & .comment__wrapper {
+  & .comment_wrapper {
     transition: 0.3s;
     z-index: 3;
 
@@ -76,7 +76,7 @@
     height: 400px;
     position: relative;
     width: 800px;
-    & .user__avatar {
+    & .user_avatar {
       bottom: -10%;
       left: 50%;
       object-fit: contain;
@@ -86,7 +86,7 @@
       z-index: 2;
     }
   }
-  & .img__hover {
+  & .img_hover {
     position: absolute;
     width: 800px;
     height: 800px;
@@ -102,21 +102,21 @@
       object-fit: contain;
     }
   }
-  & .hero__top,
-  & .img__hover,
-  & .comment__wrapper {
+  & .hero_top,
+  & .img_hover,
+  & .comment_wrapper {
     will-change: transform;
   }
   &.hovered {
-    & .hero__top {
+    & .hero_top {
       transform: translateY(1000px);
       pointer-events: none;
     }
-    & .img__hover {
+    & .img_hover {
       transform: translate(-50%, 0%);
       pointer-events: none;
     }
-    & .comment__wrapper {
+    & .comment_wrapper {
       transform: translateY(-100%);
     }
   }

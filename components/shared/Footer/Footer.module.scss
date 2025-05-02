@@ -5,7 +5,7 @@
   * {
     color: #fcfcfd;
   }
-  &__top {
+  &_top {
     display: flex;
     justify-content: space-between;
     padding-bottom: 48px;
@@ -26,7 +26,7 @@
       }
     }
   }
-  &__content {
+  &_content {
     border-bottom: 2px solid #475467;
     border-top: 2px solid #475467;
     display: flex;
@@ -50,8 +50,8 @@
     & .right {
       display: flex;
       gap: 28px;
-      & .content__box {
-        & .box__title {
+      & .content_box {
+        & .box_title {
           color: #7790ed;
           font-size: 20px;
           font-weight: 600;
@@ -69,8 +69,8 @@
             }
           }
         }
-        & .contact__form {
-          & .input__box {
+        & .contact_form {
+          & .input_box {
             display: flex;
             & input {
               background: #fff;

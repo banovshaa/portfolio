@@ -10,15 +10,15 @@ type CardOptions = {
 const SkillCard = ({ options }: { options: CardOptions }) => {
   return (
     <div className={styles.card}>
-      <div className={styles.card__header}>
+      <div className={styles.card_header}>
         <h4>{options.name}</h4>
       </div>
       {options.image && (
-        <div className={styles.img__container}>
+        <div className={styles.img_container}>
           <Image src={options.image} alt="Skill image" />
         </div>
       )}
-      <div className={styles.btn__wrapper}>
+      <div className={styles.btn_wrapper}>
         <button>
           <ArrowIcon size={70} />
         </button>

@@ -20,7 +20,7 @@ const Content = ({
   );
 
   return (
-    <section className={styles.content__wrapper}>
+    <section className={styles.content_wrapper}>
       {visibleSlides.map((_, index) => (
         <div
           key={`slide__${index}`}
