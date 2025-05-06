@@ -5,13 +5,11 @@
   border-radius: 50px;
   padding-bottom: 80px;
   padding-top: 80px;
-  position: relative;
-
   & .title_wrapper {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 96px;
+    margin-bottom: 56px;
     & .title {
       color: #fcfcfd;
       font-size: 48px;
@@ -30,5 +28,10 @@
       letter-spacing: -0.3px;
       width: 50%;
     }
+  }
+  & .list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
   }
 }

@@ -1,6 +1,5 @@
 "use client";
 
-import Swiper from "../../../shared/Swiper/Swiper";
 import styles from "./Skills.module.scss";
 import SkillCard from "./SkillCard/SkillCard";
 import { SkillType } from "@/interfaces/interfaces";
@@ -25,6 +24,7 @@ const Skills = () => {
   useEffect(() => {
     get();
   }, []);
+
   return (
     <section className={`${styles.skills} container`}>
       <div className={styles.title_wrapper}>
@@ -33,10 +33,10 @@ const Skills = () => {
         </h4>
         <p className={styles.subtitle}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus
-          nunc, posuere in justo vulputate, bibendum sodales{" "}
+          nunc, posuere in justo vulputate, bibendum sodales
         </p>
       </div>
-      <Swiper swiperContent={skills} slidesToShow={3}>
+      <div className={styles.list}>
         {skills.map((skill) => (
           <SkillCard
             key={`skill__${skill.id}`}
@@ -46,7 +46,7 @@ const Skills = () => {
             }}
           />
         ))}
-      </Swiper>
+      </div>
     </section>
   );
 };
