@@ -9,10 +9,16 @@ type CardOptions = {
 const SkillCard = ({ options }: { options: CardOptions }) => {
   return (
     <div className={styles.card}>
-      <div className={styles.icon}>
-        {options.image && <Image src={options.image} alt="Skill image" />}
+      <div className={styles.card_top}>
+        <div className={styles.icon}>
+          {options.image && <Image src={options.image} alt="Skill image" />}
+        </div>
+        <h4>{options.name}</h4>
       </div>
-      <h4>{options.name}</h4>
+      <p className={styles.bottom_text}>
+        Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam
+        interdum
+      </p>
     </div>
   );
 };

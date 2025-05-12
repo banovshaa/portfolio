@@ -6,6 +6,7 @@ import { SkillType } from "@/interfaces/interfaces";
 import { useEffect, useState } from "react";
 import { useLoader } from "@/components/providers/LoaderProvider";
 import { getAllSkillsRequest } from "@/services/skills.service";
+import Swiper from "@/components/shared/Swiper/Swiper";
 
 const Skills = () => {
   const [skills, setSkills] = useState<SkillType[]>([]);
@@ -37,15 +38,17 @@ const Skills = () => {
         </p>
       </div>
       <div className={styles.list}>
-        {skills.map((skill) => (
-          <SkillCard
-            key={`skill__${skill.id}`}
-            options={{
-              name: skill.name,
-              image: skill.image,
-            }}
-          />
-        ))}
+        <Swiper swiperContent={skills} slidesToShow={4}>
+          {skills.map((skill) => (
+            <SkillCard
+              key={`skill__${skill.id}`}
+              options={{
+                name: skill.name,
+                image: skill.image,
+              }}
+            />
+          ))}
+        </Swiper>
       </div>
     </section>
   );
