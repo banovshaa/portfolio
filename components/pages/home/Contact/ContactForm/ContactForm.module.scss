@@ -9,3 +9,11 @@
     margin-top: 16px;
   }
 }
+
+@media (max-width: 480px) {
+  .contact_form {
+    & .inputs {
+      flex-direction: column;
+    }
+  }
+}

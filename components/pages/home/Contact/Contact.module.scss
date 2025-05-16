@@ -22,3 +22,31 @@
     }
   }
 }
+
+@media (max-width: 993px) {
+  .contact {
+    &_inner {
+      margin-bottom: 98px;
+      width: 80%;
+      & h1 {
+        font-size: 54px;
+        line-height: 62px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    &_inner {
+      margin-bottom: 68px;
+      width: 100%;
+      padding-left: 24px;
+      padding-right: 24px;
+      & h1 {
+        font-size: 48px;
+        line-height: 58px;
+      }
+    }
+  }
+}

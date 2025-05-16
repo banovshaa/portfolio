@@ -7,18 +7,7 @@
   align-items: center;
   overflow: hidden;
   gap: 80px;
-  position: relative;
-  & .hover_img {
-    position: absolute;
-    left: 6.5%;
-    top: 6%;
-    width: 400px;
-    object-fit: contain;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-    pointer-events: none;
-  }
+
   &_left {
     background-color: #7790ed;
     border-radius: 80px;
@@ -27,17 +16,30 @@
     justify-content: center;
     position: relative;
     transition: 0.3s;
-    width: 300px;
+    width: 350px;
     z-index: 1;
     & .user_avatar {
-      height: 100%;
+      height: 95%;
       object-fit: contain;
       width: 100%;
+      transform: translateY(5%);
+    }
+    & .hover_img {
+      position: absolute;
+      left: 0%;
+      top: -20%;
+      width: 100%;
+      object-fit: contain;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+      pointer-events: none;
+      z-index: -1;
     }
   }
   &_right {
     margin-top: 46px;
-    width: 800px;
+    width: calc(100% - 430px);
     & h2 {
       color: #344054;
       font-size: 64px;
@@ -75,12 +77,63 @@
   &.hovered {
     & .about_left {
       transform: translateY(20px);
+      & .hover_img {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1.2);
+      }
     }
+  }
+}
+@media (max-width: 993px) {
+  .about {
+    flex-direction: column;
+    padding: 122px 60px;
 
-    & .hover_img {
-      visibility: visible;
-      opacity: 1;
-      transform: scale(1.1);
+    &_right {
+      margin-top: 0px;
+      width: 100%;
+      text-align: center;
+      & h2 {
+        font-size: 54px;
+        line-height: 62px;
+      }
+      & p {
+        margin: 24px 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 122px 32px 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 102px 24px 60px;
+
+    &_left {
+      height: 300px;
+      width: 300px;
+    }
+    &_right {
+      & h2 {
+        font-size: 48px;
+        line-height: 48px;
+      }
+      & p {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 16px 0;
+      }
+      & button {
+        padding: 24px 28px;
+        font-size: 18px;
+      }
     }
   }
 }

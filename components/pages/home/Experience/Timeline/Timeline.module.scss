@@ -131,10 +131,10 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 993px) {
   .timeline {
     &__progress {
-      left: 6px;
+      left: 20px;
     }
 
     & .timeline__item {
@@ -144,11 +144,10 @@
       & .left {
         grid-area: 1 / 2 / 2 / 3;
 
-        & p {
+        & h3 {
           text-align: left;
           align-self: flex-start;
-          margin-bottom: 24px;
-          font-size: 1.5rem;
+          margin-bottom: 12px;
         }
       }
 
@@ -159,6 +158,14 @@
 
       & .right {
         grid-area: span 1 / span 1 / span 1 / span 1;
+        & .subtitle {
+          font-size: 24px;
+          line-height: 36px;
+        }
+        & .desc {
+          font-size: 16px;
+          line-height: 22px;
+        }
       }
     }
   }

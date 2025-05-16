@@ -21,7 +21,9 @@ const About = () => {
           alt="User avatar"
           className={styles.user_avatar}
         />
+        <Image src={HoverBG} alt={"Hover bg"} className={styles.hover_img} />
       </div>
+
       <div className={styles.about_right}>
         <h2>
           Why <span>Hire me</span>?
@@ -36,7 +38,6 @@ const About = () => {
         </p>
         <button>Hire me</button>
       </div>
-      <Image src={HoverBG} alt={"Hover bg"} className={styles.hover_img} />
     </section>
   );
 };

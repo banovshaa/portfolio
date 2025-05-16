@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} container`}>
       <div className={styles.footer_top}>
         <h2>Lets Connect there</h2>
         <Button name="Hire me" icon={ArrowIcon} />
