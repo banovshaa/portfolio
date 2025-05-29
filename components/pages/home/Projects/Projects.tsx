@@ -32,7 +32,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className={`${styles.projects} container`}>
+    <section id="project" className={`${styles.projects} container`}>
       <div className={styles.projects_top}>
         <h2>
           Lets have a look at my <span>Portfolio</span>

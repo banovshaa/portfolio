@@ -5,6 +5,7 @@ import { StaticImageData } from "next/image";
 type CardOptions = {
   name: string;
   image?: StaticImageData;
+  desc?: string;
 };
 const SkillCard = ({ options }: { options: CardOptions }) => {
   return (
@@ -15,10 +16,7 @@ const SkillCard = ({ options }: { options: CardOptions }) => {
         </div>
         <h4>{options.name}</h4>
       </div>
-      <p className={styles.bottom_text}>
-        Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam
-        interdum
-      </p>
+      <p className={styles.bottom_text}>{options.desc}</p>
     </div>
   );
 };

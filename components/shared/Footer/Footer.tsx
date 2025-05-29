@@ -1,9 +1,10 @@
-import { ArrowIcon, SendIcon } from "@/assets/images/shared.vector";
+import { ArrowIcon } from "@/assets/images/shared.vector";
 import Button from "../Button/Button";
 import styles from "./Footer.module.scss";
 import Logo from "../Logo/Logo";
 import { headerNav, socials } from "@/constants/navigation.constant";
 import Link from "next/link";
+import DownloadButton from "../DownloadButton/DownloadButton";
 
 const Footer = () => {
   return (
@@ -59,15 +60,16 @@ const Footer = () => {
             </nav>
           </div>
           <div className={styles.content_box}>
-            <p className={styles.box_title}>Get the latest information</p>
-            <form className={styles.contact_form}>
+            <p className={styles.box_title}>Download my resume</p>
+            {/* <form className={styles.contact_form}>
               <div className={styles.input_box}>
                 <input type="email" placeholder="Email Address" />
                 <button>
                   <SendIcon />
                 </button>
               </div>
-            </form>
+            </form> */}
+            <DownloadButton />
           </div>
         </div>
       </div>

@@ -32,14 +32,14 @@ const Skills = () => {
   }, []);
 
   return (
-    <section className={styles.skills}>
+    <section id="skills" className={styles.skills}>
       <div className={styles.title_wrapper}>
         <h4 className={styles.title}>
           My <span>Skills</span>
         </h4>
         <p className={styles.subtitle}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus
-          nunc, posuere in justo vulputate, bibendum sodales
+          Turning design into seamless digital experiences using modern frontend
+          tools.
         </p>
       </div>
       <div className={styles.list}>
@@ -72,6 +72,7 @@ const Skills = () => {
                 options={{
                   name: skill.name,
                   image: skill.image,
+                  desc: skill.desc,
                 }}
               />
             </SwiperSlide>

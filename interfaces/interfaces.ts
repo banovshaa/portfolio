@@ -10,5 +10,6 @@ export interface ProjectType {
 export interface SkillType {
   id: number;
   name: string;
+  desc: string;
   image: StaticImageData;
 }

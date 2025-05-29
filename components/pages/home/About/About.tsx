@@ -10,7 +10,10 @@ const About = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
-    <section className={`${styles.about} ${isHovered && styles.hovered}`}>
+    <section
+      id="about"
+      className={`${styles.about} ${isHovered && styles.hovered}`}
+    >
       <div
         className={styles.about_left}
         onMouseEnter={() => setIsHovered(true)}

@@ -1,0 +1,61 @@
+.download_btn {
+  align-items: center;
+  background-color: rgba(104, 104, 104, 0.2);
+  border-radius: 60px;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  gap: 12px;
+  height: 56px;
+  overflow: hidden;
+  position: relative;
+  transition: background 0.3s ease;
+  width: 250px;
+  &:hover {
+    background-color: rgba(104, 104, 104, 0.5);
+  }
+  & .text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -0.385px;
+  }
+  & .bar {
+    background: #7790ed;
+    bottom: 0;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: width 2s ease;
+    width: 0%;
+  }
+  &.done {
+    & .text {
+      transition: color 0.3s ease;
+    }
+  }
+  &.loading {
+    & .icon {
+      animation: bounce 1s infinite ease-in-out;
+      & svg {
+        fill: #7790ed;
+      }
+    }
+    & .text {
+      color: #7790ed;
+    }
+    & .bar {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}

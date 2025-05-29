@@ -11,23 +11,23 @@ export const headerNav = [
   },
   {
     name: "About",
-    path: "/",
+    path: "/#about",
   },
   {
-    name: "Service",
-    path: "/",
+    name: "Experience",
+    path: "/#experience",
   },
   {
-    name: "Resume",
-    path: "/",
+    name: "Skills",
+    path: "/#skills",
   },
   {
     name: "Project",
-    path: "/",
+    path: "/#project",
   },
   {
     name: "Contact",
-    path: "/",
+    path: "/#contact",
   },
 ];
 
