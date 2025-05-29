@@ -4,6 +4,7 @@
   background-size: cover;
   border-radius: 50px;
   padding: 80px;
+
   & .title_wrapper {
     align-items: center;
     display: flex;
@@ -26,6 +27,50 @@
       line-height: 24px;
       letter-spacing: -0.3px;
       width: 50%;
+    }
+  }
+}
+@media (max-width: 993px) {
+  .skills {
+    padding: 80px 48px;
+    & .title_wrapper {
+      flex-direction: column;
+      gap: 16px;
+      & .title {
+        text-align: center;
+        width: 100%;
+      }
+      & .subtitle {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .skills {
+    padding: 72px 32px;
+    & .title_wrapper {
+      flex-direction: column;
+      gap: 16px;
+      & .title {
+        width: 100%;
+      }
+      & .subtitle {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .skills {
+    padding: 56px 24px;
+
+    & .title_wrapper {
+      margin-bottom: 32px;
+      & .subtitle {
+        font-size: 18px;
+      }
     }
   }
 }

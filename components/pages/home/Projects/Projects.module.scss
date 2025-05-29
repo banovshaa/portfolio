@@ -18,3 +18,32 @@
     }
   }
 }
+
+@media (max-width: 993px) {
+  .projects {
+    &_top {
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+      & h2 {
+        font-size: 54px;
+        line-height: 62px;
+        width: 100%;
+      }
+      & button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    &_top {
+      & h2 {
+        font-size: 48px;
+        line-height: 48px;
+      }
+    }
+  }
+}

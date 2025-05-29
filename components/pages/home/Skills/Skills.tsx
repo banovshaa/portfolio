@@ -6,7 +6,12 @@ import { SkillType } from "@/interfaces/interfaces";
 import { useEffect, useState } from "react";
 import { useLoader } from "@/components/providers/LoaderProvider";
 import { getAllSkillsRequest } from "@/services/skills.service";
-import Swiper from "@/components/shared/Swiper/Swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Keyboard } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const Skills = () => {
   const [skills, setSkills] = useState<SkillType[]>([]);
@@ -38,15 +43,38 @@ const Skills = () => {
         </p>
       </div>
       <div className={styles.list}>
-        <Swiper swiperContent={skills} slidesToShow={4}>
+        <Swiper
+          spaceBetween={16}
+          breakpoints={{
+            480: {
+              slidesPerView: 2,
+            },
+            1200: {
+              slidesPerView: 3,
+            },
+          }}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          keyboard={{
+            enabled: true,
+            onlyInViewport: true,
+          }}
+          modules={[Pagination, Autoplay, Keyboard]}
+        >
           {skills.map((skill) => (
-            <SkillCard
-              key={`skill__${skill.id}`}
-              options={{
-                name: skill.name,
-                image: skill.image,
-              }}
-            />
+            <SwiperSlide key={`skill__${skill.id}`}>
+              <SkillCard
+                options={{
+                  name: skill.name,
+                  image: skill.image,
+                }}
+              />
+            </SwiperSlide>
           ))}
         </Swiper>
       </div>
