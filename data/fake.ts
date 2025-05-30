@@ -21,30 +21,40 @@ export const demoProjects = [
     name: "Kowine",
     path: "https://kowine.vercel.app/",
     image: KowineIMG,
+    description:
+      "Kowine is a sophisticated and responsive e-commerce platform designed specifically for wine enthusiasts. The design focuses on elegance and functionality, ensuring that users can effortlessly explore and purchase a curated selection of wines.",
   },
   {
     id: 2,
     name: "Sociala",
     path: "/",
     image: SocialaIMG,
+    description:
+      "Sociala is an all-in-one platform that combines social networking, real-time messaging, and online shopping. Designed with user engagement in mind, it allows users to connect through chats, explore products, and make purchases—all within a unified interface.",
   },
   {
     id: 3,
     name: "Weather App",
     path: "https://weather-app-lemon-eight-31.vercel.app/",
     image: WeatherIMG,
+    description:
+      "A clean and responsive weather forecasting app developed using pure JavaScript, without any frameworks or libraries. It demonstrates strong understanding of core JavaScript concepts, asynchronous programming (using fetch), and DOM manipulation.",
   },
   {
     id: 4,
     name: "LTC Lab",
     path: "https://ltclab.edu.az/",
     image: LtcIMG,
+    description:
+      "LTC Lab is a modern educational platform offering intensive training programs in various areas. The website features a clean, responsive design that provides detailed information about each course and enrollment procedures. ",
   },
   {
     id: 5,
     name: "Gamestra Landing Page",
     path: "https://gamestra.vercel.app/",
     image: GamestraIMG,
+    description:
+      "Gamestra is an engaging and dynamic platform designed for gamers to explore, play, and connect. Featuring intuitive navigation and vibrant design, the project showcases expertise in creating immersive user experiences and interactive web applications.",
   },
   // {
   //   id: 6,

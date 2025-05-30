@@ -8,6 +8,7 @@ import { useState } from "react";
 type CardOptions = {
   name: string;
   url: string;
+  description?: string;
   image?: StaticImageData;
 };
 const ProjectCard = ({ options }: { options: CardOptions }) => {
@@ -25,11 +26,7 @@ const ProjectCard = ({ options }: { options: CardOptions }) => {
         onMouseLeave={() => setIsHovered(false)}
       >
         <p className={styles.title}>{options.name}</p>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci rem
-          tempore quasi maiores doloremque corrupti quidem sequi vitae minima
-          impedit.
-        </p>
+        <p className={styles.description}>{options.description}</p>
       </div>
     </div>
   );

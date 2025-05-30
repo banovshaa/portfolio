@@ -4,6 +4,7 @@ export interface ProjectType {
   id: number;
   name: string;
   path: string;
+  description: string;
   image: StaticImageData;
 }
 

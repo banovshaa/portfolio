@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "@/components/shared/Button/Button";
+// import Button from "@/components/shared/Button/Button";
 import styles from "./Projects.module.scss";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import { useEffect, useState } from "react";
@@ -8,10 +8,11 @@ import { ProjectType } from "@/interfaces/interfaces";
 import { getAllProjectsRequest } from "@/services/projects.service";
 import { useLoader } from "@/components/providers/LoaderProvider";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay, Keyboard } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const Projects = () => {
   const [projects, setProjects] = useState<ProjectType[]>([]);
@@ -32,17 +33,17 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="project" className={`${styles.projects} container`}>
+    <section id="projects" className={`${styles.projects} container`}>
       <div className={styles.projects_top}>
         <h2>
           Lets have a look at my <span>Portfolio</span>
         </h2>
-        <Button
+        {/* <Button
           name="See all"
           style={{
             height: 56,
           }}
-        />
+        /> */}
       </div>
       <Swiper
         spaceBetween={16}
@@ -57,7 +58,15 @@ const Projects = () => {
         pagination={{
           dynamicBullets: true,
         }}
-        modules={[Pagination]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        keyboard={{
+          enabled: true,
+          onlyInViewport: true,
+        }}
+        modules={[Pagination, Autoplay, Keyboard]}
       >
         {projects.map((project: ProjectType) => (
           <SwiperSlide key={`project__${project.id}`}>
@@ -66,6 +75,7 @@ const Projects = () => {
                 name: project.name,
                 url: project.path,
                 image: project.image,
+                description: project.description,
               }}
             />
           </SwiperSlide>

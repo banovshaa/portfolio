@@ -17,9 +17,9 @@ const Footer = () => {
         <div className={styles.left}>
           <Logo />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue
-            interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Sed lobortis orci elementum egestas lobortis.
+            Crafted with passion and precision, this portfolio showcases my work
+            in front-end development, user experience design, and creative
+            problem-solving. Let&apos;s build something great together.
           </p>
           <div className={styles.socials}>
             {socials.map((item, index) => {

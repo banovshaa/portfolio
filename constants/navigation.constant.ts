@@ -22,8 +22,8 @@ export const headerNav = [
     path: "/#skills",
   },
   {
-    name: "Project",
-    path: "/#project",
+    name: "Projects",
+    path: "/#projects",
   },
   {
     name: "Contact",
