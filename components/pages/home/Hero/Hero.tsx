@@ -42,6 +42,7 @@ const Hero = () => {
       <div className={styles.element_wrapper}>
         <div
           className={styles.circle}
+          onClick={() => setIsHovered(true)}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
