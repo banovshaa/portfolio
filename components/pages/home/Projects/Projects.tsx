@@ -57,6 +57,7 @@ const Projects = () => {
         }}
         pagination={{
           dynamicBullets: true,
+          clickable: true,
         }}
         autoplay={{
           delay: 2500,

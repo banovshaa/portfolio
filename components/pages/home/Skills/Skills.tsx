@@ -55,6 +55,7 @@ const Skills = () => {
           }}
           pagination={{
             dynamicBullets: true,
+            clickable: true,
           }}
           autoplay={{
             delay: 2500,

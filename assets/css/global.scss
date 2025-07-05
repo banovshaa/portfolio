@@ -108,17 +108,21 @@ input:focus::placeholder {
 }
 
 .swiper-wrapper {
-  padding-bottom: 64px;
+  padding-bottom: 74px;
 }
 .swiper-pagination {
   width: 100% !important;
+  background-color: rgba(65, 65, 65, 0.3);
+  padding: 16px 10px;
+  border-radius: 50px;
+  max-width: 350px;
   .swiper-pagination-bullet,
   .swiper-pagination-bullet-active-prev,
   .swiper-pagination-bullet-active-next {
     opacity: 1;
   }
   & .swiper-pagination-bullet {
-    background: #e4e7ec;
+    background: #fff;
     border-radius: 20.736px;
     height: 15px;
     width: 15px;

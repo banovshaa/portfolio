@@ -13,6 +13,7 @@ const ContactForm = () => {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
     const formData = new FormData(event.currentTarget);
 
     formData.append("access_key", "df71c812-961a-4208-854b-43cf95b3bace");
@@ -31,6 +32,7 @@ const ContactForm = () => {
     const result = await response.json();
     if (result.success) {
       toast?.open(result.message);
+      form.reset();
     }
   }
   return (
