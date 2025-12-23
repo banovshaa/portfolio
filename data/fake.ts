@@ -14,10 +14,27 @@ import SocialaIMG from "@/assets/images/projects/sociala.jpeg";
 import WeatherIMG from "@/assets/images/projects/weather.jpeg";
 import LtcIMG from "@/assets/images/projects/ltc.jpeg";
 import GamestraIMG from "@/assets/images/projects/gamestra.jpeg";
+import ZerboIMG from "@/assets/images/projects/zerbo.png";
+import ScopsimIMG from "@/assets/images/projects/scopsim.png";
 
 export const demoProjects = [
-  {
+   {
     id: 1,
+    name: "Zerbo",
+    path: "https://zerbo.io/",
+    image: ZerboIMG,
+    description:
+      "Zerbo is a unified and effective management platform that allows you to systematically manage your customer base, automate reservations, and optimize your revenues.",
+  },  {
+    id: 2,
+    name: "Scopsim",
+    path: "https://www.scopsim.ai/",
+    image: ScopsimIMG,
+    description:
+      "Scopsim is an AI-powered platform that enables users to chat with an intelligent assistant, upload documents, run simulations, and explore insights through clear visualizations such as charts, tables, and line graphs.",
+  },
+  {
+    id: 3,
     name: "Kowine",
     path: "https://kowine.vercel.app/",
     image: KowineIMG,
@@ -25,7 +42,7 @@ export const demoProjects = [
       "Kowine is a sophisticated and responsive e-commerce platform designed specifically for wine enthusiasts. The design focuses on elegance and functionality, ensuring that users can effortlessly explore and purchase a curated selection of wines.",
   },
   {
-    id: 2,
+    id: 4,
     name: "Sociala",
     path: "/",
     image: SocialaIMG,
@@ -33,7 +50,7 @@ export const demoProjects = [
       "Sociala is an all-in-one platform that combines social networking, real-time messaging, and online shopping. Designed with user engagement in mind, it allows users to connect through chats, explore products, and make purchases—all within a unified interface.",
   },
   {
-    id: 3,
+    id: 5,
     name: "Weather App",
     path: "https://weather-app-lemon-eight-31.vercel.app/",
     image: WeatherIMG,
@@ -41,7 +58,7 @@ export const demoProjects = [
       "A clean and responsive weather forecasting app developed using pure JavaScript, without any frameworks or libraries. It demonstrates strong understanding of core JavaScript concepts, asynchronous programming (using fetch), and DOM manipulation.",
   },
   {
-    id: 4,
+    id: 6,
     name: "LTC Lab",
     path: "https://ltclab.edu.az/",
     image: LtcIMG,
@@ -49,19 +66,14 @@ export const demoProjects = [
       "LTC Lab is a modern educational platform offering intensive training programs in various areas. The website features a clean, responsive design that provides detailed information about each course and enrollment procedures. ",
   },
   {
-    id: 5,
+    id: 7,
     name: "Gamestra Landing Page",
     path: "https://gamestra.vercel.app/",
     image: GamestraIMG,
     description:
       "Gamestra is an engaging and dynamic platform designed for gamers to explore, play, and connect. Featuring intuitive navigation and vibrant design, the project showcases expertise in creating immersive user experiences and interactive web applications.",
   },
-  // {
-  //   id: 6,
-  //   name: "Lirante 6",
-  //   path: "/",
-  //   image: "/",
-  // },
+
 ];
 export const demoSkills = [
   {
